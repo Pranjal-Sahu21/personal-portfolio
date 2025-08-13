@@ -45,3 +45,24 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+/* Theme Toggle */
+const themeToggleBtn = document.getElementById("theme-toggle");
+const rootElement = document.documentElement;
+
+if (localStorage.getItem("theme") === "light") {
+  rootElement.classList.add("light");
+  themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+}
+
+themeToggleBtn.addEventListener("click", () => {
+  rootElement.classList.toggle("light");
+  
+  if (rootElement.classList.contains("light")) {
+    themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+    localStorage.setItem("theme", "light");
+  } else {
+    themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+    localStorage.setItem("theme", "dark");
+  }
+});

@@ -485,5 +485,119 @@ section.visible {
 @media (max-width: 400px) {
   .typewriter {
     font-size: 2rem;
-  } 
+  }
 }
+/* Light mode variables */
+:root.light {
+  --primary: #ff6b35;
+  --accent: #ff3d00;
+  --bg: #f9f9f9;
+  --light-text: #1e1e1e;
+  --muted-text: #555;
+  --card-bg: #ffffff;
+}
+
+:root {
+  --card-bg: #2c2c2c; /* Dark mode default */
+}
+
+/* Style for theme toggle button */
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--light-text);
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  color: var(--primary);
+}
+/* Light mode variables */
+:root.light {
+  --primary: #ff6b35;
+  --accent: #ff3d00;
+  --bg: #f9f9f9;
+  --light-text: #1e1e1e;
+  --muted-text: #555;
+  --card-bg: #ffffff; /* white cards in light mode */
+}
+
+/* Light mode header */
+:root.light nav {
+  background: #ffffff; /* white navbar */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+:root.light .logo-circle {
+  background: var(--primary);
+}
+
+:root.light ul.nav-links li a {
+  color: var(--light-text);
+}
+
+:root.light ul.nav-links li a:hover {
+  color: var(--primary);
+}
+
+:root.light .nav-active {
+  background: #ffffff;
+}
+
+/* Light mode cards (projects, skills, journey, contact) */
+:root.light .project-card,
+:root.light .skill-item,
+:root.light .journey-card,
+:root.light form {
+  background: var(--card-bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+:root.light .project-title,
+:root.light #skills h2,
+:root.light #journey h2,
+:root.light .contact-section h1 {
+  color: var(--primary);
+}
+
+:root.light .project-desc,
+:root.light .journey-card p,
+:root.light .skill-name {
+  color: var(--muted-text);
+}
+
+:root.light input,
+:root.light textarea {
+  background: #f1f1f1;
+  color: var(--light-text);
+}
+
+:root.light footer {
+  background-color: #f1f1f1;
+  color: var(--muted-text);
+  border-top: 1px solid #ddd;
+}
+/* Dark mode (default) - remove skill box background */
+.skill-item {
+  background: none; /* no box in dark mode */
+  box-shadow: none;
+}
+
+/* Light mode - keep skill boxes */
+:root.light .skill-item {
+  background: var(--card-bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+:root.light .hero-content h2 {
+  color: #2c2c2c;
+}
+.nav-links {
+  margin-left: -60px;
+}
+/* :root.light .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 8px 2px var(--primary), 0 0 15px 6px rgba(226, 88, 34, 0.5);
+} */
