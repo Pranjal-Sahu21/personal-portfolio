@@ -67,3 +67,8 @@ themeToggleBtn.addEventListener("click", () => {
   }
 });
 
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector(".nav-links").classList.remove("nav-active");
+  });
+});
