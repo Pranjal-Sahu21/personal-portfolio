@@ -639,14 +639,3 @@ section.visible {
 .nav-links a.active::after {
   width: 100%;
 }
-.contact-btn {
-  background-color: transparent;
-  margin-left: 12px;
-  border: 2px solid var(--primary);
-}
-
-.contact-btn:hover {
-  background-color: transparent;
-  transform: scale(1.05);
-}
-
