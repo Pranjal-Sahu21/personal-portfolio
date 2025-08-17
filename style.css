@@ -130,8 +130,13 @@ ul.nav-links li a:hover {
   min-width: 160px;
   min-height: 160px;
   overflow: hidden;
+  transition: all 0.25s;
 }
 
+.hero-img:hover {
+  transform: scale(1.025);
+  box-shadow: 0 0 8px 2px var(--primary), 0 0 15px 6px rgba(226, 88, 34, 0.5);
+}
 .hero-img img {
   width: 100%;
   object-fit: cover;
@@ -602,3 +607,4 @@ section.visible {
     margin-left: 0;
   }
 }
+
