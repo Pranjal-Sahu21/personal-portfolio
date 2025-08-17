@@ -595,7 +595,7 @@ section.visible {
 :root.light .hero-content h2 {
   color: #2c2c2c;
 }
-:root.light .contact-btn{
+:root.light .contact-btn {
   color: #1e1e1e;
 }
 .nav-links {
@@ -638,4 +638,15 @@ section.visible {
 
 .nav-links a.active::after {
   width: 100%;
+}
+.project-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
 }
