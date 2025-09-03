@@ -1036,7 +1036,7 @@ nav {
   border-radius: 8px;
   text-decoration: none;
   transition: background-position 0.5s ease, transform 0.5s ease;
-  animation: floatyBtn 4s ease-in-out infinite; /* ✅ floating animation */
+  animation: floatyBtn 4s ease-in-out infinite; 
 }
 .download-btn:hover {
   background-position: right;
