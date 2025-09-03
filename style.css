@@ -619,7 +619,7 @@ nav,
 footer,
 section {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 @keyframes bgMove {
@@ -765,7 +765,7 @@ ul.nav-links li a:hover {
   }
 
   ul.nav-links.nav-active {
-    display: flex; 
+    display: flex;
   }
 }
 
@@ -837,7 +837,7 @@ ul.nav-links li a:hover {
 }
 .section > * {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 footer {
@@ -868,7 +868,6 @@ footer::before {
   pointer-events: none;
 }
 
-/* Footer text */
 footer p {
   position: relative;
   z-index: 1;
@@ -876,7 +875,6 @@ footer p {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Social icons in footer */
 footer .social-icons a {
   color: var(--accent);
   margin: 0 8px;
@@ -900,14 +898,14 @@ footer .social-icons a:hover {
 
 @media (max-width: 600px) {
   .projects {
-    grid-template-columns: 1fr; 
-    gap: 32px; 
-    margin: 40px 0 60px; 
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin: 40px 0 60px;
   }
 
   .project-card {
     padding: 20px;
-    margin: 0 10px; 
+    margin: 0 10px;
   }
 }
 
@@ -1005,3 +1003,23 @@ nav {
   border-bottom: 1px solid rgba(226, 88, 34, 0.2);
 }
 
+@media (max-width: 992px) {
+  ul.nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(18, 18, 18, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 88, 34, 0.2);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  ul.nav-links.nav-active {
+    display: flex;
+  }
+}
