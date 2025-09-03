@@ -1024,10 +1024,19 @@ nav {
 }
 
 .download-btn {
+  display: inline-block;
+  margin-top: 36px;
+  padding: 12px 24px;
   background: linear-gradient(90deg, #ff6a00 50%, #ff5100 50%);
   background-size: 200% 100%;
   background-position: left;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
   transition: background-position 0.5s ease, transform 0.5s ease;
+  animation: floatyBtn 4s ease-in-out infinite; /* ✅ floating animation */
 }
 .download-btn:hover {
   background-position: right;
@@ -1035,5 +1044,12 @@ nav {
   transform: scale(1.05);
 }
 
-
-
+@keyframes floatyBtn {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
