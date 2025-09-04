@@ -1036,7 +1036,7 @@ nav {
   border-radius: 8px;
   text-decoration: none;
   transition: background-position 0.5s ease, transform 0.5s ease;
-  animation: floatyBtn 4s ease-in-out infinite; 
+  animation: floatyBtn 4s ease-in-out infinite;
 }
 .download-btn:hover {
   background-position: right;
@@ -1052,4 +1052,39 @@ nav {
   50% {
     transform: translateY(-10px);
   }
+}
+
+.contact-card input,
+.contact-card textarea {
+  background: rgba(24, 24, 24, 0.65);
+}
+.contact-card {
+  background: rgba(24, 24, 24, 0.65);
+}
+
+.contact-card {
+  background: rgba(24, 24, 24, 0.65);
+  border-radius: 14px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  box-shadow: 0 0 30px rgba(226, 88, 34, 0.25),
+    0 0 60px rgba(255, 190, 120, 0.15);
+}
+
+.contact-section form,
+.contact-card {
+  box-shadow: 0 0 30px rgba(226, 88, 34, 0.25),
+    0 0 60px rgba(255, 190, 120, 0.15) !important;
+  background: rgba(24, 24, 24, 0.65);
+  border-radius: 14px;
+}
+
+.contact-card button:active {
+  transform: scale(0.95) translateY(2px);
+  box-shadow: 0 0 8px rgba(226, 88, 34, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(90deg, var(--accent), var(--primary));
 }
